@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --bg-color: #010051;
+  --fg-color: #08007f;
+  --text-color: whitesmoke;
+  --hover-color: #9881ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--fg-color);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+
+  top: 0;
+  z-index: 100;
+  position: sticky;
+}
+
+nav > a {
+  font-size: larger;
+  padding: 10px;
+  display: flex;
+  column-gap: 5px;
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+
+nav > a:hover {
+  color: var(--hover-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg > path {
+  color: var(--text-color) !important;
+}
+
+.home-page {
+  padding: 25px;
+  margin-top: 25px;
+  row-gap: 30px;
+}
+
+.home-quote > .MuiPaper-elevation {
+  background-color: var(--fg-color) !important;
+  color: var(--text-color) !important;
+  max-width: 700px;
+}
+
+.home-quote > div > div > p {
+  color: rgb(193, 193, 193) !important;
+}
+
+.fav-page {
+  padding: 25px 40px;
+}
+
+.fav-page > div > div {
+  background-color: var(--fg-color);
+  color: var(--text-color);
+  max-width: 700px;
+}
+
+.fav-page > button {
+  margin-top: 25px;
+}
